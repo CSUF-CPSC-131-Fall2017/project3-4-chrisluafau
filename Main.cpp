@@ -114,7 +114,7 @@ int main (int argc, char * const argv[])
 	}
 	else
 	{
-		cout << "  Fail" << endl;
+ 		cout << "  Fail" << endl;
 	}
 	
 	cout << endl << "GetWordTest (20 points)" << endl;
@@ -303,7 +303,7 @@ bool	ExcessiveAppearancesTest()
 	}
 	else
 	{
-		return(false);
+ 		return(false);
 	}
 }
 
@@ -346,7 +346,7 @@ bool	ExclusionTest()
 		cout << "Can't load exclusions." << endl;
 		return(false);
 	}
-	
+
 	while (true)
 	{
 		success = documentFile.Read();
@@ -357,6 +357,9 @@ bool	ExclusionTest()
 		
 		while (true)
 		{
+
+
+
 			word = documentFile.GetWord();
 			if (!word.empty())
 			{
@@ -512,7 +515,6 @@ bool	PageNumberTest()
 			break;
 		}
 	}
-	
 	return(pass);
 }
 
